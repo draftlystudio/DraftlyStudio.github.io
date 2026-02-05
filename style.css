@@ -427,6 +427,14 @@ textarea.input-field { min-height: 60px; height: 120px; max-height: 200px; resiz
 }
 @media (max-width: 768px) {
   #hero-3d { display: none; }
+  
+#hero-3d canvas {
+  display: none;
+}
+.hero-banner {
+ display: none;
+}
+
 }
 /* ===== THREE.JS CANVAS ===== */
 /* ================================
@@ -455,4 +463,5 @@ textarea.input-field { min-height: 60px; height: 120px; max-height: 200px; resiz
 /* ================================
    HERO BANNER (SAFE VERSION)
    ================================ */
+
 
