@@ -3,499 +3,919 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Draftly - Mechanical Design & Drafting Agency</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
-</head>
-<body class="dark-theme">
-    <header  class="header" data-header>
-        <div class="container">
-          
-            <h1 class="h1 logo">
-                <a href="index.html">DRAFTLY<span>.</span></a>
-            </h1>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
-            <div class="navbar-actions">
-                <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn><span class="icon"></span></button>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav-toggle" id="nav-toggle">
+        <i class="uil uil-bars"></i>
+    </div>
+
+    <aside class="sidebar" id="sidebar">
+        <nav class="nav">
+            <div class="nav-logo">
+                <a href="#" class="nav-logo-text" ><img src="asst/draftly.jpg" alt="Draftyly"></a>
             </div>
 
-            <button class="nav-toggle-btn " aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
-                <span class="one"></span>
-                <span class="two"></span>
-                <span class="three"></span>
-            </button>
+            <div class="nav-menu">
+                <div class="menu">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link active-link">Home</a>
+                        </li>
 
-            <nav class="navbar" data-navbar>
-                <ul class="navbar-list">
-                    <li><a href="#home" class="navbar-link">Home</a></li>
-                    <li><a href="#about" class="navbar-link">About</a></li>
-                    <li><a href="#skills" class="navbar-link">Skills</a></li>
-                    <li><a href="#portfolio" class="navbar-link">Portfolio</a></li>
-                    <li><a href="#contact" class="navbar-link">Contact</a></li>
-                </ul>
-            </nav>
-          
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#skills" class="nav-link">Skills</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#work" class="nav-link">Work</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#services" class="nav-link">Services</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="btn-share">
+                <i class="uil uil-share-alt social-share"></i>
+            </div>
+
+            <div class="nav-close" id="nav-close">
+                <i class="uil uil-times"></i>
+            </div>
+        </nav>
+    </aside>
+
+    <main class="main">
+      <section class="home" id="home">
+    <div class="home-container container grid" id="links">
+        <div class="home-social">
+            <span class="home-social-follow">Connect</span>
+            <div class="home-social-links">
+                <a href="#" target="_blank" class="home-social-link">
+                    <i class="uil uil-facebook-f"></i>
+                </a>
+
+
+            <a href="#" target="_blank" class="home-social-link">
+                <i class="uil uil-instagram"></i>
+            </a>
+
+            <a href="#" target="_blank" class="home-social-link">
+                <i class="uil uil-twitter"></i>
+            </a>
         </div>
-    </header>
+    </div>
 
-    <main>
-        <article class="container">
-            <section class="hero" id="home">
-  <figure class="hero-banner">
     <div id="hero-3d"></div>
-  </figure>
+<div class="home-data">
+      <div class="texr">
+    <h1 class="home-title">Draftly Engineering</h1>
+     <h3 class="home-subtitle">AutoCAD & SolidWorks Mechanical Design Agency</h3>
+    <p class="home-description">
+        Delivering precision mechanical drafting, industrial CAD modeling,
+        sheet metal layouts, and fabrication-ready documentation.
+        We transform concepts, sketches, and legacy drawings into
+        accurate engineering deliverables used in real production environments.
+    </p>
+             <p class="mobile-text">
+        AutoCAD drafting, SolidWorks modeling, and fabrication drawings.
+          <!-- Background/inline video -->
+   
+    </p>
+  </div>
+  
+    
+
+   <div class="vid">
+        <video autoplay muted loop playsinline>
+            <source src="From KlickPin CF Pin auf Desk.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <a href="#about"   id="M" class="button">
+        <i class="uil uil-user button-icon"></i>
+        Explore Capabilities
+    </a>
+
+</div>
+
+
+    <div class="my-info">
+
+        <div class="info-item">
+            <i class="uil uil-facebook-messenger info-icon"></i>
+            <div>
+                <h3 class="info-title">Support</h3>
+                <span class="info-subtitle">Engineering Assistance</span>
+            </div>
+        </div>
+
+        <div class="info-item">
+            <i class="uil uil-whatsapp info-icon"></i>
+            <div>
+                <h3 class="info-title">Phone</h3>
+                <span class="info-subtitle">+91 965 3658 058</span>
+            </div>
+        </div>
+
+        <div class="info-item">
+            <i class="uil uil-envelope-edit info-icon"></i>
+            <div>
+                <h3 class="info-title">Email</h3>
+                <span class="info-subtitle" id="em"><a href="mailto: draftly.studio@gmail.com">draftly.studio@gmail.com</a></span>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
 </section>
 
 
-                         
-                <div class="hero-content">
-                    <h2 class="h2 hero-title">Designing & Building Creative Products</h2>
-                    <a href="#contact" class="btn btn-primary">Contact us</a>
-                </div>
+       <section class="about section" id="about">
+    <h2 class="section-title" data-heading="Engineering Profile">About Us</h2>
 
-                <ul class="hero-social-list">
-                    <li>
-                        <a href="#" class="hero-social-link">
-                            <i class="ri-facebook-fill"></i>
-                            <div class="tooltip">Facebook</div>
-                        </a>
-                    </li>
 
-                    <li>
-                        <a href="#" class="hero-social-link">
-                            <i class="ri-twitter-x-line"></i>
-                            <div class="tooltip">Twitter-X</div>
-                        </a>
-                    </li>
+<div class="about-container container grid">
+      <canvas id="card-canvas"></canvas>
 
-                    <li>
-                        <a href="#" class="hero-social-link">
-                            <i class="ri-linkedin-fill"></i>
-                            <div class="tooltip">Linkedin</div>
-                        </a>
-                    </li>
-                </ul>
+    <div class="about-data">
+        <h3 class="about-heading">
+            Mechanical CAD Specialists Supporting Manufacturing & Fabrication
+        </h3>
 
-                <a href="#stats" class="scroll-down">Scroll</a>
-            </section>
+        <p class="about-description">
+            Draftly Engineering provides professional AutoCAD drafting and SolidWorks
+            modeling services focused on real production needs. We convert hand sketches,
+            PDF drawings, and conceptual ideas into accurate engineering models,
+            assemblies, and fabrication documentation.
 
-            <section class="stats" id="stats">
-                <ul class="stats-list">
-                    <li>
-                        <a href="#" class="stats-card">
-                            <div class="card-icon">
-                                <img src="https://i.postimg.cc/x1TWtf69/stats-card-icon-1.png" alt="badge icon">
-                            </div>
+            Our workflow emphasizes dimensional accuracy, tolerance awareness,
+            manufacturability, and compatibility with CNC machining, laser cutting,
+            sheet metal fabrication, and industrial production pipelines.
+        </p >
+       <p class=""> Mechanical CAD Specialists
 
-                            <h2 class="h2 card-title">12+<strong>Years of Experience</strong></h2>
-                            <ion-icon name="chevron-forward-outline"></ion-icon>
-                        </a>
-                    </li>
+                   AutoCAD drafting and SolidWorks modeling for manufacturing.
+                   We convert sketches into accurate CAD models and
+                   fabrication-ready documentation.
+         </p>
+        <div class="about-info">
 
-                    <li>
-                        <a href="#" class="stats-card">
-                            <div class="card-icon">
-                                <img src="https://i.postimg.cc/q7ByNYBb/stats-card-icon-2.png" alt="checkmark icon">
-                            </div>
+            <div class="about-box">
+                <i class="uil uil-award about-icon"></i>
+                <h3 class="about-title">Experience</h3>
+                <span class="about-subtitle">3+ Years Practical CAD Work</span>
+            </div>
 
-                            <h2 class="h2 card-title">230+<strong>Completed Projects</strong></h2>
-                            <ion-icon name="chevron-forward-outline"></ion-icon>
-                        </a>
-                    </li>
+            <div class="about-box">
+                <i class="uil uil-suitcase-alt about-icon"></i>
+                <h3 class="about-title">Projects Delivered</h3>
+                <span class="about-subtitle">120+ Engineering Drawings</span>
+            </div>
 
-                    <li>
-                        <a href="#" class="stats-card">
-                            <div class="card-icon">
-                                <img src="https://i.postimg.cc/hj6d3tL6/stats-card-icon-3.png" alt="peoples rating icon">
-                            </div>
+            <div class="about-box">
+                <i class="uil uil-headphones-alt about-icon"></i>
+                <h3 class="about-title">Availability</h3>
+                <span class="about-subtitle">Technical Consultation</span>
+            </div>
 
-                            <h2 class="h2 card-title">95+<strong>Happy Clients</strong></h2>
-                            <ion-icon name="chevron-forward-outline"></ion-icon>
-                        </a>
-                    </li>
-                </ul>
-            </section>
+        </div>
 
-            <section class="about" id="about">
-                <figure class="about-banner">
-                    <img src="https://i.postimg.cc/LXcVgTbJ/about-banner.png" alt="A man thinking" class="w-100">
-                </figure>
+        <a href="#contact" class="button">
+            <i class="uil uil-navigator button-icon"></i>
+            Request Engineering Quote
+        </a>
+    </div>
+</div>
 
-                <div class="about-content section-content">
-                    <p class="section-subtitle">About me</p>
-                    <h2 class="h2 section-title">Need a Product? Get in Touch!</h2>
-                    <p class="section-text">Hi, I'm Jack Reacher. I'm a developer passionate in creating clean web applications with intuitive functionalities. I enjoy the process of turning ideas into reality using creative solutions. I'm always curious about leaning new skills, tools and concepts. In addition to working on various solo full stack projects, I have worked with complex teams, which involves daily stand-ups and communications, source control and project management</p>
-                </div>
+<section class="qualification section">
+    <h2 class="section-title" data-heading="Workflow">Project Process Timeline</h2>
 
-                <div class="btn-group">
-                    <button class="btn btn-secondary">Hire me</button>
-                    <button class="btn btn-primary">Download CV</button>
-                </div>
-            </section>
 
-            <section class="skills" id="skills">
-                <div class="skills-content section-content">
-                    <p class="section-subtitle">My Skills</p>
-                    <h2 class="h2 section-title">What my Programming Skills Includes?</h2>
-                    <p class="section-text">I develop simple, intuitive and responsive user interface that helps user get things done with less effort and time with those technologies</p>
+<div class="qualification-container container grid">
 
-                    <div class="skills-toggle" data-toggle-box>
-                        <button class="toggle-btn active" data-toggle-btn>Skills</button>
-                        <button class="toggle-btn" data-toggle-btn>Tools</button>
+    <div class="education">
+        <h3 class="qualification-title">
+            <i class="uil uil-file-search-alt"></i>
+            Client Intake & Planning
+        </h3>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <div class="circle-dot"></div>
+                <h3 class="timeline-title">Requirement Review</h3>
+                <p class="timeline-text">
+                    Client submits sketches, PDFs, or specifications.
+                    Engineering feasibility and scope evaluation is performed.
+                </p>
+                <span class="timeline-date">
+                    <i class="uil uil-clock"></i>
+                    Step 1
+                </span>
+            </div>
+
+            <div class="timeline-item">
+                <div class="circle-dot"></div>
+                <h3 class="timeline-title">Scope Definition</h3>
+                <p class="timeline-text">
+                    CAD complexity, tolerances, and manufacturing requirements defined.
+                    Timeline and deliverables structured.
+                </p>
+                <span class="timeline-date">
+                    <i class="uil uil-clock"></i>
+                    Step 2
+                </span>
+            </div>
+
+            <div class="timeline-item">
+                <div class="circle-dot"></div>
+                <h3 class="timeline-title">Project Approval</h3>
+                <p class="timeline-text">
+                    Client confirms execution plan and drafting begins.
+                </p>
+                <span class="timeline-date">
+                    <i class="uil uil-clock"></i>
+                    Step 3
+                </span>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="experience">
+        <h3 class="qualification-title">
+            <i class="uil uil-process"></i>
+            Design & Delivery Execution
+        </h3>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <div class="circle-dot"></div>
+                <h3 class="timeline-title">CAD Development</h3>
+                <p class="timeline-text">
+                    AutoCAD layouts or SolidWorks models created with precision dimensioning.
+                </p>
+                <span class="timeline-date">
+                    <i class="uil uil-clock"></i>
+                    Step 4
+                </span>
+            </div>
+
+            <div class="timeline-item">
+                <div class="circle-dot"></div>
+                <h3 class="timeline-title">Quality Verification</h3>
+                <p class="timeline-text">
+                    Internal checks for alignment, tolerances, and manufacturability.
+                </p>
+                <span class="timeline-date">
+                    <i class="uil uil-clock"></i>
+                    Step 5
+                </span>
+            </div>
+
+            <div class="timeline-item">
+                <div class="circle-dot"></div>
+                <h3 class="timeline-title">Delivery Package</h3>
+                <p class="timeline-text">
+                    Final outputs supplied including DXF, STEP, PDF drawings,
+                    BOM sheets, or assembly data.
+                </p>
+                <span class="timeline-date">
+                    <i class="uil uil-clock"></i>
+                    Step 6
+                </span>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+</section>
+
+<section class="skills section" id="skills">
+    <h2 class="section-title" data-heading="Engineering Tools">Technical Capabilities</h2>
+
+
+<div class="skills-container container grid">
+
+    <div class="skills-tabs">
+
+        <div class="skills-header skills-active" data-target="#frontend">
+            <i class="uil uil-drafting-compass skills-icon"></i>
+            <div>
+                <h1 class="skills-title">AutoCAD Drafting</h1>
+                <span class="skills-subtitle">Production Drawings</span>
+            </div>
+            <i class="uil uil-angle-down skills-arrow"></i>
+        </div>
+
+        <div class="skills-header" data-target="#design">
+            <i class="uil uil-cube skills-icon"></i>
+            <div>
+                <h1 class="skills-title">SolidWorks Modeling</h1>
+                <span class="skills-subtitle">3D Parts & Assemblies</span>
+            </div>
+            <i class="uil uil-angle-down skills-arrow"></i>
+        </div>
+
+        <div class="skills-header" data-target="#backend">
+            <i class="uil uil-setting skills-icon"></i>
+            <div>
+                <h1 class="skills-title">Engineering Services</h1>
+                <span class="skills-subtitle">Flexible Project Scope</span>
+            </div>
+            <i class="uil uil-angle-down skills-arrow"></i>
+        </div>
+
+    </div>
+
+    <div class="skills-content">
+
+        <!-- AutoCAD -->
+        <div class="skills-group skills-active" data-content id="frontend">
+            <div class="skills-list grid">
+
+                <div class="skills-data">
+                    <div class="skills-titles">
+                        <h3 class="skills-name">2D Layout Drafting</h3>
+                        <span class="skills-number">95%</span>
+                    </div>
+                    <div class="skills-bar">
+                        <span class="skills-percentage" style="width:95%;"></span>
                     </div>
                 </div>
 
-                <div class="skills-box " data-skills-box>
-                    <ul class="skills-list">
-                        <li>
-                            <div class="skills-card">
-                                <div class="tooltip">HTML5</div>
-                                <div class="card-icon"><img src="https://i.postimg.cc/90cYBMc2/html5.png" alt="HTML5 logo"></div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="skills-card">
-                                <div class="tooltip">CSS3</div>
-                                <div class="card-icon"><img src="https://i.postimg.cc/cCDwMBD7/css3.png" alt="CSS3 logo"></div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="skills-card">
-                                <div class="tooltip">Javascript</div>
-                                <div class="card-icon"><img src="https://i.postimg.cc/htmQfnq1/javascript.png" alt="Javascript logo"></div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="skills-card">
-                                <div class="tooltip">TypeScript</div>
-                                <div class="card-icon"><img src="https://i.postimg.cc/HswVg206/typescript.png" alt="TypeScript logo"></div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="skills-card">
-                                <div class="tooltip">JQuery</div>
-                                <div class="card-icon"><img src="https://i.postimg.cc/Y9C14PR2/jquery.png" alt="JQuery logo"></div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="skills-card">
-                                <div class="tooltip">Bootstrap</div>
-                                <div class="card-icon"><img src="https://i.postimg.cc/Fzf3pJw2/bootstrap.png" alt="Bootstrap logo"></div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="skills-card">
-                                <div class="tooltip">Angular</div>
-                                <div class="card-icon"><img src="https://i.postimg.cc/pLMzQrC6/angular.png" alt="Angular logo"></div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="skills-card">
-                                <div class="tooltip">React</div>
-                                <div class="card-icon"><img src="https://i.postimg.cc/LsNPMTpc/react.png" alt="React logo"></div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="skills-card">
-                                <div class="tooltip">Vue</div>
-                                <div class="card-icon"><img src="https://i.postimg.cc/YqYbBJyT/vue.png" alt="Vue logo"></div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="skills-card">
-                                <div class="tooltip">Firebase</div>
-                                <div class="card-icon"><img src="https://i.postimg.cc/vTHbwrGN/firebase.png" alt="Firebase logo"></div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="skills-card">
-                                <div class="tooltip">PugJs</div>
-                                <div class="card-icon"><img src="https://i.postimg.cc/FRKN2brn/pugjs.png" alt="PugJs logo"></div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="skills-card">
-                                <div class="tooltip">SASS</div>
-                                <div class="card-icon"><img src="https://i.postimg.cc/jSrKsYqf/sass.png" alt="SASS logo"></div>
-                            </div>
-                        </li>
-                    </ul>
-
-                    <ul class="tools-list">
-                        <li>
-                            <div class="skills-card">
-                                <div class="tooltip">Ajax</div>
-                                <div class="card-icon"><img src="https://i.postimg.cc/FHSDb1Sf/ajax.png" alt="Ajax logo"></div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="skills-card">
-                                <div class="tooltip">Gulp</div>
-                                <div class="card-icon"><img src="https://i.postimg.cc/Xqhkd07c/gulp.png" alt="Gulp logo"></div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="skills-card">
-                                <div class="tooltip">Webpack</div>
-                                <div class="card-icon"><img src="https://i.postimg.cc/NFTk6zy3/webpack.png" alt="Webpack logo"></div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="skills-card">
-                                <div class="tooltip">Git</div>
-                                <div class="card-icon"><img src="https://i.postimg.cc/Gp5FZCv0/git.png" alt="Git logo"></div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="skills-card">
-                                <div class="tooltip">Npm</div>
-                                <div class="card-icon"><img src="https://i.postimg.cc/wjxDMvV8/npm.png" alt="Npm logo"></div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="skills-card">
-                                <div class="tooltip">Command Line</div>
-                                <div class="card-icon"><img src="https://i.postimg.cc/VNrr0b0T/command.png" alt="Command Line logo"></div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="skills-card">
-                                <div class="tooltip">VS Code</div>
-                                <div class="card-icon"><img src="https://i.postimg.cc/zvXqW9PB/vs-code.png" alt="VS Code logo"></div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="skills-card">
-                                <div class="tooltip">Trello</div>
-                                <div class="card-icon"><img src="https://i.postimg.cc/FHJNjbGj/trello.png" alt="Trello logo"></div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="skills-card">
-                                <div class="tooltip">Clickup</div>
-                                <div class="card-icon"><img src="https://i.postimg.cc/wjJYtqT2/clickup.png" alt="Clickup logo"></div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="skills-card">
-                                <div class="tooltip">Slack</div>
-                                <div class="card-icon"><img src="https://i.postimg.cc/3RfcSVxW/slack.png" alt="Slack logo"></div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="skills-card">
-                                <div class="tooltip">Photoshop</div>
-                                <div class="card-icon"><img src="https://i.postimg.cc/MZ4L1CLF/photoshop.png" alt="Photoshop logo"></div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="skills-card">
-                                <div class="tooltip">Adobe XD</div>
-                                <div class="card-icon"><img src="https://i.postimg.cc/g0NSjQR4/adobe-xd.png" alt="Adobe XD logo"></div>
-                            </div>
-                        </li>
-                    </ul>
+                <div class="skills-data">
+                    <div class="skills-titles">
+                        <h3 class="skills-name">Manufacturing Dimensioning</h3>
+                        <span class="skills-number">90%</span>
+                    </div>
+                    <div class="skills-bar">
+                        <span class="skills-percentage" style="width:90%;"></span>
+                    </div>
                 </div>
-            </section>
 
-            <section class="project" id="portfolio">
-                <ul class="project-list">
-                    <li>
-                        <div class="project-content section-content">
-                            <p class="section-subtitle">My Works</p>
-                            <h2 class="h3 section-title">See my works which will amaze you!</h2>
-                            <p class="section-text">We develop the best quality website that serves you in the long-term. Well-documented, clean, easy and elegant interface helps any non-technical clients</p>
+                <div class="skills-data">
+                    <div class="skills-titles">
+                        <h3 class="skills-name">Reverse Engineering Drafting</h3>
+                        <span class="skills-number">85%</span>
+                    </div>
+                    <div class="skills-bar">
+                        <span class="skills-percentage" style="width:85%;"></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- SOLIDWORKS -->
+        <div class="skills-group" data-content id="design">
+            <div class="skills-list grid">
+
+                <div class="skills-data">
+                    <div class="skills-titles">
+                        <h3 class="skills-name">3D Part Modeling</h3>
+                        <span class="skills-number">90%</span>
+                    </div>
+                    <div class="skills-bar">
+                        <span class="skills-percentage" style="width:90%;"></span>
+                    </div>
+                </div>
+
+                <div class="skills-data">
+                    <div class="skills-titles">
+                        <h3 class="skills-name">Assembly Construction</h3>
+                        <span class="skills-number">85%</span>
+                    </div>
+                    <div class="skills-bar">
+                        <span class="skills-percentage" style="width:85%;"></span>
+                    </div>
+                </div>
+
+                <div class="skills-data">
+                    <div class="skills-titles">
+                        <h3 class="skills-name">Physical Part to CAD Conversion</h3>
+                        <span class="skills-number">80%</span>
+                    </div>
+                    <div class="skills-bar">
+                        <span class="skills-percentage" style="width:80%;"></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- SERVICES FLEXIBILITY -->
+        <div class="skills-group" data-content id="backend">
+            <div class="skills-list grid">
+
+                <div class="skills-data">
+                    <div class="skills-titles">
+                        <h3 class="skills-name">Small Project Acceptance</h3>
+                        <span class="skills-number">100%</span>
+                    </div>
+                    <div class="skills-bar">
+                        <span class="skills-percentage" style="width:100%;"></span>
+                    </div>
+                </div>
+
+                <div class="skills-data">
+                    <div class="skills-titles">
+                        <h3 class="skills-name">Prototype Drafting</h3>
+                        <span class="skills-number">85%</span>
+                    </div>
+                    <div class="skills-bar">
+                        <span class="skills-percentage" style="width:85%;"></span>
+                    </div>
+                </div>
+
+                <div class="skills-data">
+                    <div class="skills-titles">
+                        <h3 class="skills-name">Fabrication Drawing Support</h3>
+                        <span class="skills-number">90%</span>
+                    </div>
+                    <div class="skills-bar">
+                        <span class="skills-percentage" style="width:90%;"></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<section class="work section" id="work">
+    <h2 class="section-title" data-heading="Engineering Portfolio">Recent Projects</h2>
+
+<div class="work-filters">
+    <span class="work-item active-work" data-filter="all">All</span>
+    <span class="work-item" data-filter=".web">2D CAD</span>
+    <span class="work-item" data-filter=".app">3D Models</span>
+    <span class="work-item" data-filter=".design">Fabrication</span>
+</div>
+
+<div class="work-container container grid">
+
+    <!-- PROJECT 1 -->
+    <div class="work-card mix web">
+        <img src="asst/brackrt layout.jpg" alt="" class="work-img">
+        <h3 class="work-title">Laser Cut Bracket Layout</h3>
+        <span class="work-button">View Details<i class="uil uil-arrow-right work-button-icon"></i></span>
+
+        <div class="portfolio-item-details">
+            <h3 class="details-title">Precision 2D Manufacturing Drawing</h3>
+            <p class="details-description">
+                AutoCAD layout created for CNC laser cutting with dimension accuracy and tolerance alignment.
+            </p>
+            <ul class="details-info">
+                <li>Created - <span>Project Sample</span></li>
+                <li>Software - <span>AutoCAD</span></li>
+                <li>Role - <span>Mechanical Drafting</span></li>
+                <li>Output - <span>DXF / PDF</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="work-card mix app">
+        <img src="asst/solidwork 3d as.jpg" alt="" class="work-img">
+        <h3 class="work-title">Machine Assembly Modeling</h3>
+        <span class="work-button">View Details<i class="uil uil-arrow-right work-button-icon"></i></span>
+
+        <div class="portfolio-item-details">
+            <h3 class="details-title">Industrial Assembly Development</h3>
+            <p class="details-description">
+                SolidWorks multi-part assembly created for motion clearance and fitment validation.
+            </p>
+            <ul class="details-info">
+                <li>Created - <span>Project Sample</span></li>
+                <li>Software - <span>SolidWorks</span></li>
+                <li>Role - <span>3D Modeling</span></li>
+                <li>Output - <span>STEP / SLDASM</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- PROJECT 3 -->
+    <div class="work-card mix design">
+        <img src="asst/leser sheet metal.jpg" alt="" class="work-img">
+        <h3 class="work-title">Sheet Metal Enclosure</h3>
+        <span class="work-button">View Details<i class="uil uil-arrow-right work-button-icon"></i></span>
+
+        <div class="portfolio-item-details">
+            <h3 class="details-title">Fabrication Pattern Development</h3>
+            <p class="details-description">
+                Flat pattern and bend allowances prepared for manufacturing execution.
+            </p>
+            <ul class="details-info">
+                <li>Created - <span>Project Sample</span></li>
+                <li>Software - <span>AutoCAD / SolidWorks</span></li>
+                <li>Role - <span>Fabrication Drafting</span></li>
+                <li>Output - <span>DXF / PDF</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- PROJECT 4 -->
+    <div class="work-card mix app">
+        <img src="asst/strcuture.png" alt="" class="work-img">
+        <h3 class="work-title">Structural Frame Drawing</h3>
+        <span class="work-button">View Details<i class="uil uil-arrow-right work-button-icon"></i></span>
+
+        <div class="portfolio-item-details">
+            <h3 class="details-title">Welded Frame Documentation</h3>
+            <p class="details-description">
+                Dimensioned fabrication drawings for structural assembly production.
+            </p>
+            <ul class="details-info">
+                <li>Created - <span>Project Sample</span></li>
+                <li>Software - <span>AutoCAD</span></li>
+                <li>Role - <span>Drafting</span></li>
+                <li>Output - <span>PDF / DXF</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- PROJECT 5 -->
+    <div class="work-card mix web">
+        <img src="asst/mounting.jpg" alt="" class="work-img">
+        <h3 class="work-title">Mounting Plate Geometry</h3>
+        <span class="work-button">View Details<i class="uil uil-arrow-right work-button-icon"></i></span>
+
+        <div class="portfolio-item-details">
+            <h3 class="details-title">Production Plate Layout</h3>
+            <p class="details-description">
+                Geometry prepared with tolerance notes for machining workflows.
+            </p>
+            <ul class="details-info">
+                <li>Created - <span>Project Sample</span></li>
+                <li>Software - <span>AutoCAD</span></li>
+                <li>Role - <span>Drafting</span></li>
+                <li>Output - <span>DXF</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- PROJECT 6 -->
+    <div class="work-card mix design">
+        <img src="asst/Equipment Base Model.webp" alt="" class="work-img">
+        <h3 class="work-title">Equipment Base Model</h3>
+        <span class="work-button">View Details<i class="uil uil-arrow-right work-button-icon"></i></span>
+
+        <div class="portfolio-item-details">
+            <h3 class="details-title">Machining Base Modeling</h3>
+            <p class="details-description">
+                SolidWorks base model designed for manufacturing alignment.
+            </p>
+            <ul class="details-info">
+                <li>Created - <span>Project Sample</span></li>
+                <li>Software - <span>SolidWorks</span></li>
+                <li>Role - <span>3D Modeling</span></li>
+                <li>Output - <span>STEP</span></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+</section>
+
+
+        <div class="portfolio-popup">
+            <div class="portfolio-popup-inner">
+                <div class="portfolio-popup-content grid">
+                    <span class="portfolio-popup-close"><i class="uil uil-times"></i></span>
+                    <div class="pp-thumbnail">
+                        <img src="https://i.postimg.cc/sXLjnC5p/work-2.png" alt="" class="portfolio-popup-img">
+                    </div>
+
+                    <div class="portfolio-popup-info">
+                        <div class="portfolio-popup-subtitle">Featured - <span>Design</span></div>
+                        <div class="portfolio-popup-body">
+                            <h3 class="details-title">App for Technology & Services</h3>
+                            <p class="details-description">A stylish burger restaurant mobile app interface displayed on two smartphones</p>
+
+                            <ul class="details-info">
+                                <li>Created - <span>15 Apr 2025</span></li>
+                                <li>Technologies - <span>html css</span></li>
+                                <li>Role - <span>frontend</span></li>
+                                <li>View - <span><a href="#">www.domain.com</a></span></li>
+                            </ul>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="services section" id="services">
+    <h2 class="section-title" data-heading="Engineering Services">What We Offer</h2>
+
+
+<div class="services-container container grid">
+
+    <!-- SERVICE 1 -->
+    <div class="services-content">
+        <div>
+            <i class="uil uil-ruler-combined services-icon"></i>
+            <h3 class="services-title">AutoCAD <br> Drafting</h3>
+        </div>
+
+        <span class="services-button">
+            View More <i class="uil uil-arrow-right services-button-icon"></i>
+        </span>
+
+        <div class="services-modal">
+            <div class="services-modal-content">
+                <i class="uil uil-times services-modal-close"></i>
+
+                <h3 class="services-modal-title">2D Mechanical Drafting</h3>
+                <p class="services-modal-description">
+                    Precision drawings created for manufacturing, machining,
+                    and fabrication environments.
+                </p>
+
+                <ul class="services-modal-services grid">
+                    <li class="services-modal-service">
+                        <i class="uil uil-check-circle services-modal-icon"></i>
+                        <p class="services-modal-info">Dimensioned Layout Creation</p>
                     </li>
 
-                    <li>
-                        <a href="#" class="project-card">
-                            <figure class="card-banner">
-                                <img src="https://i.postimg.cc/SRGFrbyY/image-plane.jpg" alt="Plane flight" width="500">
-                            </figure>
-
-                            <div class="card-content">
-                                <h3 class="h4 card-title">Below the plane</h3>
-                                <time class="publish-date" datetime="2025-03">March 2025</time>
-                            </div>
-                        </a>
+                    <li class="services-modal-service">
+                        <i class="uil uil-check-circle services-modal-icon"></i>
+                        <p class="services-modal-info">Legacy Drawing Conversion</p>
                     </li>
 
-                    <li>
-                        <a href="#" class="project-card">
-                            <figure class="card-banner">
-                                <img src="https://i.postimg.cc/3r4jFjjr/coffee.jpg" alt="Ceramic cup filled with coffee" width="500">
-                            </figure>
-
-                            <div class="card-content">
-                                <h3 class="h4 card-title">Pile of coffee beans</h3>
-                                <time class="publish-date" datetime="2025-03">February 2025</time>
-                            </div>
-                        </a>
+                    <li class="services-modal-service">
+                        <i class="uil uil-check-circle services-modal-icon"></i>
+                        <p class="services-modal-info">Laser Cutting DXF Files</p>
                     </li>
 
-                    <li>
-                        <a href="#" class="project-card">
-                            <figure class="card-banner">
-                                <img src="https://i.postimg.cc/grFpxQzw/desert.jpg" alt="Natural Rock Arch" width="500">
-                            </figure>
-
-                            <div class="card-content">
-                                <h3 class="h4 card-title">Weathering Arc</h3>
-                                <time class="publish-date" datetime="2025-02">February 2025</time>
-                            </div>
-                        </a>
+                    <li class="services-modal-service">
+                        <i class="uil uil-check-circle services-modal-icon"></i>
+                        <p class="services-modal-info">Tolerance Annotation</p>
                     </li>
 
-                    <li>
-                        <a href="#" class="project-card">
-                            <figure class="card-banner">
-                                <img src="https://i.postimg.cc/s2mpWxFt/article-3.jpg" alt="Cityscape during sunset" width="500">
-                            </figure>
-
-                            <div class="card-content">
-                                <h3 class="h4 card-title">Natural light</h3>
-                                <time class="publish-date" datetime="2025-02">February 2025</time>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="project-card">
-                            <figure class="card-banner">
-                                <img src="https://i.postimg.cc/bJCS8cR7/explore-product-4.jpg" alt="Heart-shaped object" width="500">
-                            </figure>
-
-                            <div class="card-content">
-                                <h3 class="h4 card-title">Mixed shades</h3>
-                                <time class="publish-date" datetime="2025-01">January 2025</time>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="project-card">
-                            <figure class="card-banner">
-                                <img src="https://i.postimg.cc/PJgBCFgV/img.jpg" alt="Dark Rock and the White Snow" width="500">
-                            </figure>
-
-                            <div class="card-content">
-                                <h3 class="h4 card-title">Rugged mountains</h3>
-                                <time class="publish-date" datetime="2025-01">January 2025</time>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li>
-                        <button class="load-more">Load More Works</button>
+                    <li class="services-modal-service">
+                        <i class="uil uil-check-circle services-modal-icon"></i>
+                        <p class="services-modal-info">Small Project Acceptance</p>
                     </li>
                 </ul>
-            </section>
+            </div>
+        </div>
+    </div>
 
-            <section class="contact" id="contact">
-                <div class="contact-content section-content">
-                    <p class="section-subtitle">Contact</p>
-                    <h2 class="h3 section-title">Have you any project? Drop a message!</h2>
-                    <p class="section-text">Get in touch and let me know if I can help! Fill out the form and I'll be in touch as soon as possible</p>
 
-                    <ul class="contact-list">
-                        <li class="contact-list-item">
-                            <div class="contact-item-icon">
-                                <ion-icon name="location-outline"></ion-icon>
-                            </div>
+    <!-- SERVICE 2 -->
+    <div class="services-content">
+        <div>
+            <i class="uil uil-cube services-icon"></i>
+            <h3 class="services-title">SolidWorks <br> Modeling</h3>
+        </div>
 
-                            <div class="wrapper">
-                                <h3 class="h4 contact-item-title">Address: </h3>
-                                <address class="contact-info">
-                                    725 Broadway, New York, NY 10003, USA
-                                </address>
-                            </div>
-                        </li>
+        <span class="services-button">
+            View More <i class="uil uil-arrow-right services-button-icon"></i>
+        </span>
 
-                        <li class="contact-list-item">
-                            <div class="contact-item-icon">
-                                <ion-icon name="call-outline"></ion-icon>
-                            </div>
+        <div class="services-modal">
+            <div class="services-modal-content">
+                <i class="uil uil-times services-modal-close"></i>
 
-                            <div class="wrapper">
-                                <h3 class="h4 contact-item-title">Phone: </h3>
-                                
-                                <a href="6461234567" class="contact-info">(646) 123-4567</a>
-                                <a href="6467890123" class="contact-info">(646) 789-0123</a>
-                            </div>
-                        </li>
+                <h3 class="services-modal-title">3D Engineering Design</h3>
+                <p class="services-modal-description">
+                    Accurate 3D modeling for assemblies, prototypes,
+                    and visualization before manufacturing.
+                </p>
 
-                        <li class="contact-list-item">
-                            <div class="contact-item-icon">
-                                <ion-icon name="mail-outline"></ion-icon>
-                            </div>
+                <ul class="services-modal-services grid">
 
-                            <div class="wrapper">
-                                <h3 class="h4 contact-item-title">Email: </h3>
-                                
-                                <a href="mailto:info@jack.com" class="contact-info">info@jack.com</a>
-                                <a href="mailto:support@jack.com" class="contact-info">support@jack.com</a>
-                            </div>
-                        </li>
+                    <li class="services-modal-service">
+                        <i class="uil uil-check-circle services-modal-icon"></i>
+                        <p class="services-modal-info">Part Modeling</p>
+                    </li>
 
-                        <li>
-                            <ul class="contact-social-list">
-                                <li>
-                                    <a href="#" class="contact-social-link">
-                                        <div class="tooltip">Facebook</div>
-                                        <i class="ri-facebook-fill"></i>   
-                                    </a>
-                                </li>
+                    <li class="services-modal-service">
+                        <i class="uil uil-check-circle services-modal-icon"></i>
+                        <p class="services-modal-info">Assembly Construction</p>
+                    </li>
 
-                                <li>
-                                    <a href="#" class="contact-social-link">
-                                        <div class="tooltip">X-Twitter</div>
-                                        <i class="ri-twitter-x-line"></i>   
-                                    </a>
-                                </li>
+                    <li class="services-modal-service">
+                        <i class="uil uil-check-circle services-modal-icon"></i>
+                        <p class="services-modal-info">Physical Component to CAD Conversion</p>
+                    </li>
 
-                                <li>
-                                    <a href="#" class="contact-social-link">
-                                        <div class="tooltip">Linkedin</div>
-                                        <i class="ri-linkedin-fill"></i>   
-                                    </a>
-                                </li>
+                    <li class="services-modal-service">
+                        <i class="uil uil-check-circle services-modal-icon"></i>
+                        <p class="services-modal-info">Interference Checking</p>
+                    </li>
 
-                                <li>
-                                    <a href="#" class="contact-social-link">
-                                        <div class="tooltip">Youtube</div>
-                                        <i class="ri-youtube-fill"></i>  
-                                    </a>
-                                </li>
-                            </ul>                   
-                        </li>
-                    </ul>
+                    <li class="services-modal-service">
+                        <i class="uil uil-check-circle services-modal-icon"></i>
+                        <p class="services-modal-info">STEP / IGES Export</p>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- SERVICE 3 -->
+    <div class="services-content">
+        <div>
+            <i class="uil uil-industry services-icon"></i>
+            <h3 class="services-title">Fabrication <br> Support</h3>
+        </div>
+
+        <span class="services-button">
+            View More <i class="uil uil-arrow-right services-button-icon"></i>
+        </span>
+
+        <div class="services-modal">
+            <div class="services-modal-content">
+                <i class="uil uil-times services-modal-close"></i>
+
+                <h3 class="services-modal-title">Production Documentation</h3>
+                <p class="services-modal-description">
+                    Engineering documentation designed for direct shop-floor execution.
+                </p>
+
+                <ul class="services-modal-services grid">
+
+                    <li class="services-modal-service">
+                        <i class="uil uil-check-circle services-modal-icon"></i>
+                        <p class="services-modal-info">Sheet Metal Layouts</p>
+                    </li>
+
+                    <li class="services-modal-service">
+                        <i class="uil uil-check-circle services-modal-icon"></i>
+                        <p class="services-modal-info">Welding Drawings</p>
+                    </li>
+
+                    <li class="services-modal-service">
+                        <i class="uil uil-check-circle services-modal-icon"></i>
+                        <p class="services-modal-info">BOM Preparation</p>
+                    </li>
+
+                    <li class="services-modal-service">
+                        <i class="uil uil-check-circle services-modal-icon"></i>
+                        <p class="services-modal-info">Revision Updates</p>
+                    </li>
+
+                    <li class="services-modal-service">
+                        <i class="uil uil-check-circle services-modal-icon"></i>
+                        <p class="services-modal-info">Prototype Assistance</p>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+</section>
+<section class="testimonials section">
+    <h2 class="section-title" data-heading="Industry Clients">Client Associations</h2>
+
+
+<div class="testimonials-container container swiper">
+    <div class="swiper-wrapper">
+
+        <!-- CLIENT 1 -->
+        <div class="testimonial-card swiper-slide">
+            <div class="testimonial-quote">
+                <i class='bx bxs-briefcase'></i>
+            </div>
+
+            <p class="testimonial-description">
+                Mechanical drafting and fabrication drawing support delivered
+                for ongoing production and workshop documentation.
+            </p>
+
+            <h3 class="testimonial-date">Industrial Client</h3>
+
+            <div class="testimonial-profile">
+               
+
+                <div class="testimonial-profile-data">
+                    <span class="testimonial-profile-name">MD Enterprises</span>
+                    <span class="testimonail-profile-detail">Manufacturing Support</span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- CLIENT 2 -->
+        <div class="testimonial-card swiper-slide">
+            <div class="testimonial-quote">
+                <i class='bx bxs-briefcase'></i>
+            </div>
+
+            <p class="testimonial-description">
+                Assembly layout drafting and component documentation
+                prepared for small mechanical build workflows.
+            </p>
+
+            <h3 class="testimonial-date">Workshop Client</h3>
+
+            <div class="testimonial-profile">
+                
+
+                <div class="testimonial-profile-data">
+                    <span class="testimonial-profile-name">S.A.W.</span>
+                    <span class="testimonail-profile-detail">Small Assembly Works</span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- CLIENT 3 -->
+        <div class="testimonial-card swiper-slide">
+            <div class="testimonial-quote">
+                <i class='bx bxs-briefcase'></i>
+            </div>
+
+            <p class="testimonial-description">
+                CAD modeling and automation machinery drafting
+                assistance provided for system development projects.
+            </p>
+
+            <h3 class="testimonial-date">Automation Sector</h3>
+
+            <div class="testimonial-profile">
+ 
+
+                <div class="testimonial-profile-data">
+                    <span class="testimonial-profile-name">A.M. Enterprises</span>
+                    <span class="testimonail-profile-detail">Automation Machinery Systems</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="swiper-pagination"></div>
+</div>
+
+</section>
+
+
+        <section class="contact section" id="contact">
+            <h2 class="section-title" data-heading="Get in Touch">Contact me</h2>
+
+            <div class="contact-container container grid">
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <i class="uil uil-envelope-edit contact-card-icon"></i>
+                            <h3 class="contact-card-title">Email</h3>
+                            <span class="contact-card-data">user@gmail.com</span>
+                            <span class="contact-button">Write me <i class="uil uil-arrow-right contact-button-icon"></i></span>
+                        </div>
+
+                        <div class="contact-card">
+                            <!-- <i class="uil uil-whatsapp contact-card-icon"></i>
+                            <h3 class="contact-card-title">Whatsapp</h3>
+                            <span class="contact-card-data">999-888-777</span>
+                            <span class="contact-button">Write me <i class="uil uil-arrow-right contact-button-icon"></i></span> -->
+                        </div>
+
+                        <div class="contact-card">
+                            <!-- <i class="uil uil-facebook-messenger contact-card-icon"></i>
+                            <h3 class="contact-card-title">Messenger</h3>
+                            <span class="contact-card-data">user.fb123</span>
+                            <span class="contact-button">Write me <i class="uil uil-arrow-right contact-button-icon"></i></span> -->
+                        </div>
+                    </div>
                 </div>
 
-                <form action="https://formspree.io/f/xykjleea" method="POST" id="contactForm" class="contact-form">
-                    <div class="form-wrapper">
+                <div class="contact-content">
+                    <form  id="contactForm" action="https://formspree.io/f/xykjleea" method="POST" class="contact-form">
+                         <div class="form-wrapper">
                         <label for="name" class="form-label">Name</label>
 
                         <div class="input-wrapper">
@@ -531,26 +951,67 @@
                         </div>
                     </div>
 
-                    <button type="submit" id="" class="btn btn-primary">Send</button>
-                </form>
-            </section>
-        </article>
-    </main>
+    
+                        <button type="submit"   class="btn-primary" >Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+        </section>
 
     <footer class="footer">
-        <div class="container">
-            <p class="h1 logo">
-                <a href="index.html" >DRAFTLY<span>.</span></a>
-            </p>
+    <div class="footer-bg">
+        <div class="footer-container container grid">
 
-            <p class="copyright">&copy; 2025 <a href="https://codepen.io/leonam-silva-de-souza" target="_blank">ULTRA CODE</a>. All rights reserved</p>
+        <div>
+            <h1 class="footer-title">Draftly Engineering</h1>
+            <span class="footer-subtitle">
+                AutoCAD & SolidWorks Mechanical Design Agency
+            </span>
         </div>
-    </footer>
 
-    <a href="#top" class="go-top " data-go-top title="Go to Top"><ion-icon name="arrow-up"></ion-icon></a>
-            
-               <!-- GSAP (normal script, global) -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        <ul class="footer-links">
+            <li>
+                <a href="#services" class="footer-links">Engineering Services</a>
+            </li>
+
+            <li>
+                <a href="#work" class="footer-links">Project Portfolio</a>
+            </li>
+
+            <li>
+                <a href="#contact" class="footer-links">Start a Project</a>
+            </li>
+        </ul>
+
+        <div class="footer-socials">
+            <a href="#" target="_blank" class="footer-social">
+                <i class="uil uil-facebook-f"></i>
+            </a>
+
+            <a href="#" target="_blank" class="footer-social">
+                <i class="uil uil-instagram"></i>
+            </a>
+
+            <a href="#" target="_blank" class="footer-social">
+                <i class="uil uil-twitter"></i>
+            </a>
+        </div>
+
+    </div>
+
+    <p class="footer-copy">
+        &#169; Draftly Engineering. CAD Drafting & Modeling Services. All rights reserved.
+    </p>
+</div>
+
+
+</footer>
+
+    </main>
+
+   
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
         integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
         crossorigin="anonymous"
         referrerpolicy="no-referrer"></script>
@@ -564,13 +1025,15 @@
   }
 }
 </script>
-
-<script type="module" src="main.js"></script>
+<script type="module" src="th.js"></script>
+<script type="module" src="script.js"></script>
 
 <!-- Ionicons (unrelated, fine as-is) -->
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 </body>
-</html> 
+</html>
