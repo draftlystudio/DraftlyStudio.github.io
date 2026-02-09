@@ -445,8 +445,6 @@ textarea.input-field { width: 100%;
    color: #000;
    
 }
-.home{
-    background: #000;}
 
 .vid{
 
@@ -463,15 +461,26 @@ width: 100%;
     object-fit: cover;
    
 }
-#MM{
-     margin-top: 130PX;
-     
+.button{
+     justify-content: center;
+      grid-row: span 2 / span 2;
+    grid-row-start: 5;
 }
+ .home-title{
+       grid-row: span 2 / span 2;
+ }
+ .home-subtitle{
+      grid-row: span 2 / span 2;
+    grid-row-start: 3;
+ }
 .texr{
-         height: 150Px;
+         height: 200Px;
      width:100%;
     bottom: 200PX;
-    
+       display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 2px;
      position: absolute;
     z-index: 2;
     background: rgba(168, 154, 154, 0.295);   /* transparency */
@@ -509,7 +518,7 @@ width: 100%;
 
 @media screen and (max-width: 576px) {
     .nav-toggle { right: initial; left: 1.5rem; }
-    .home { background-image: none; height: initial; align-items: initial; padding: 7rem 0 2rem; }
+    .home { background-image: none; height: 900px; align-items: initial; padding: 7rem 0 2rem; }
     .home-container { row-gap: 2rem; }
     .home-img { display: block; width: 250px; justify-self: center; }
     .my-info { display: none; }
@@ -520,6 +529,9 @@ width: 100%;
         #hero-3d {
     display: none;
 }
+
+
+
 
 #hero-3d canvas {
  display: none;
@@ -535,6 +547,63 @@ width: 100%;
 
     .footer-container { grid-template-columns: 1fr;  }
     .footer-links { justify-self: flex-start; }
+
+
+    .home{
+     background: #000;
+}
+.home-subtitle,.mobile-text,.home-title{
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    text-align: center;
+   color: #000;
+   
+}
+
+.vid{
+
+     display: inline;
+     height: 700px;
+     width:200px;
+}
+.vid video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+width: 100%;
+    object-fit: cover;
+   
+}
+.button{
+     justify-content: center;
+      grid-row: span 2 / span 2;
+    grid-row-start: 5;
+}
+ .home-title{
+       grid-row: span 2 / span 2;
+ }
+ .home-subtitle{
+      grid-row: span 2 / span 2;
+    grid-row-start: 3;
+ }
+.texr{
+         height: 200Px;
+     width:100%;
+    bottom: 200PX;
+       display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 2px;
+     position: absolute;
+    z-index: 2;
+    background: rgba(168, 154, 154, 0.295);   /* transparency */
+    backdrop-filter: blur(12px);           /* glass blur */
+    -webkit-backdrop-filter: blur(12px);   /* Safari */
+ z-index: 1;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.25);}
 
 
 }
@@ -613,8 +682,8 @@ width: 100%;
     }
 
     .home{
-        height: 700px !important;
-        padding-bottom: 40px;
+        height: 900px !important;
+        padding-bottom: 160px;
     }
 
     /* Fix bottom info overlap */
