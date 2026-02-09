@@ -110,7 +110,7 @@ button { cursor: pointer; }
 .nav-list { display: flex; flex-direction: row-reverse; margin: -2px auto 0 auto; }
 .nav-link { float: right; height: 100%; line-height: 100px; padding: 0 1rem; color: var(--title-color); font-weight: var(--font-medium); position: relative; transition: .4s; }
 .nav-toggle {
-    height: 32px;
+    height: 32.1px;
     width: 36px;
     cursor: pointer;
     position: fixed;
@@ -745,5 +745,6 @@ width: 100%;
     display:block;
    
 }
+
 
 
